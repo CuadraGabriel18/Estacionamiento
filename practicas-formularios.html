@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   <head>
+      <title>Problema Estacionamiento</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+   </head>
+   
+   <body style="background-image: url('esta.webp'); height: 70vh; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+    <div class="text-center fs-1 mt-5">
+      <h1 style="color: rgb(243, 211, 30);">ESTACIONAMIENTO</h1>
+    </div>
+
+      <form>
+
+      <div class="container mt-4" style="background: transparent; border: 2px solid rgb(101, 252, 0); border-radius: 20px; backdrop-filter: blur(3px); " >
+        <form>
+
+          <div class=" row mt-4 g-3 justify-content-center">
+            <label class="form-label col-3 fs-4" style="color: rgb(255, 238, 0);">Nombre Del Cliente</label>
+            <div class="col-6">
+              <input type="text" style="background-color: rgb(172, 255, 116);" class="form-control" name="txtNomClien" placeholder="Ingrese Nombre Del Cliente">
+            </div>
+          </div>
+
+          <div class=" row mt-4 g-3 justify-content-center">
+            <label class="form-label col-3 fs-4" style="color: rgb(0, 255, 234);">Marca Del Automovil</label>
+            <div class="col-6">
+              <input type="text" style="background-color: rgb(151, 255, 229);" class="form-control" name="txtNomMarca" placeholder="Ingrese Marca Del Automovil">
+            </div>
+          </div>
+          
+          <div class="row mt-4 g-3 justify-content-center">
+            <label class="form-label col-3 fs-4" style="color: rgb(255, 238, 0);">Cantidad De Horas Estacionado</label>
+            <div class="col-6">
+              <input type="number" style="background-color: rgb(172, 255, 116);" class="form-control"  name="txtCantidad"  placeholder="Ingrese Cantidad" >
+            </div>
+          </div>
+
+
+          <div class="row mt-4 g-3 justify-content-center" >
+            <div class="col-2 text-center">
+              <button type="reset"  class="btn btn-info">Borrar</button>
+            </div>
+
+            <div class="col-1 text-center">
+              <button type="button" class="btn btn-info" onclick="enviarDatos()">Calcular</button>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+
+      </form>
+      </script>
+      <!-- Enlazar el archivo js con html -->
+      <script src="js/funciones.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
